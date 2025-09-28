@@ -1,0 +1,153 @@
+/* --- Global & Font Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- Main App Container --- */
+.container {
+    background-color: #ffffff;
+    max-width: 1000px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1877f2; /* A nice blue for the title */
+}
+
+/* --- Input Groups & Labels --- */
+.input-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4b4f56;
+}
+
+input[type="time"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="time"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+/* --- Dynamic Subject Input Area --- */
+#subjects-container .subject-entry {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#subjects-container input {
+   flex-grow: 1;
+}
+
+/* --- Buttons --- */
+.add-btn {
+    background-color: #e7f3ff;
+    color: #1877f2;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+    background-color: #dceafc;
+}
+
+#generateBtn {
+    background: linear-gradient(45deg, #1877f2, #3b5998);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+}
+
+#generateBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Output Timetable --- */
+#timetable-output {
+    margin-top: 35px;
+}
+
+#timetable-output h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #e9ebee;
+}
+
+th {
+    background-color: #f5f6f7;
+    color: #4b4f56;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f6f7;
+}
+
+.hobby-row {
+    background-color: #e6ffed !important; /* Light green for hobby, !important to override even row color */
+    color: #006400; /* Dark green text */
+    font-weight: bold;
+}
