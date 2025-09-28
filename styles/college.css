@@ -1,0 +1,53 @@
+.college-photo {
+    width: 520px;          
+    height: 280px;          
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 18px auto;  
+}
+
+.college-info-wrapper h2 {
+  margin: 18px 0 14px;
+  font-weight: 600;
+  color: #222941;
+}
+
+.college-info-wrapper p {
+  .college-info-wrapper {
+  width: 790px;            /* Or match your lecture/container width */
+  max-width: 90vw;         /* Prevents overflow on small screens */
+  margin: 0 auto;
+  background: #fafbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60,60,100,0.07);
+  padding: 38px 32px 28px 32px;
+  text-align: left;        /* For left-aligned paragraph text */
+}
+
+}
+
+.motivation {
+  font-style: italic;
+  color: #263e87;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.principal-sign-section {
+  margin-top: 30px;
+}
+
+.principal-signature {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.1em;
+  color: #476188;
+  font-weight: bold;
+}
+
+.principal-title {
+  color: #666;
+  font-size: 15px;
+  margin-top: 4px;
+}

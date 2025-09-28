@@ -1,0 +1,27 @@
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(60,60,100,0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.attendance-table th, .attendance-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+}
+.attendance-table th {
+  background: #222941;
+  color: #fff;
+  font-weight: 500;
+}
+.attendance-table tr:last-child td {
+  border-bottom: none;
+}
+.attendance-wrapper h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #222941;
+}
