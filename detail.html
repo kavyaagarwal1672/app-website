@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Details Portal</title>
+    <link rel="stylesheet" href="styles/detail.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>User Details</h2>
+        <form>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+            
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course" required>
+            
+            <label for="year">Year</label>
+            <select id="year" name="year" required>
+                <option value="">Select Year</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+            </select>
+            
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" name="contact" required pattern="\d*">
+            
+            <label>Hobbies (Select multiple)</label>
+            <div class="multiselect">
+                <label><input type="checkbox" name="hobby" value="Reading">Reading</label>
+                <label><input type="checkbox" name="hobby" value="Music">Music</label>
+                <label><input type="checkbox" name="hobby" value="Travel">Travel</label>
+                <label><input type="checkbox" name="hobby" value="Cooking">Cooking</label>
+                <label><input type="checkbox" name="hobby" value="Photography">Photography</label>
+                <label><input type="checkbox" name="hobby" value="Swimming">Swimming</label>
+                <label><input type="checkbox" name="hobby" value="Cycling">Cycling</label>
+                <label><input type="checkbox" name="hobby" value="Gardening">Gardening</label>
+                <label><input type="checkbox" name="hobby" value="Painting">Painting</label>
+                <label><input type="checkbox" name="hobby" value="Dancing">Dancing</label>
+                <label><input type="checkbox" name="hobby" value="Writing">Writing</label>
+                <label><input type="checkbox" name="hobby" value="Gaming">Gaming</label>
+                <label><input type="checkbox" name="hobby" value="Running">Running</label>
+                <label><input type="checkbox" name="hobby" value="Yoga">Yoga</label>
+                <label><input type="checkbox" name="hobby" value="Volunteering">Volunteering</label>
+            </div>
+            <button type="button"  onclick="window.location.href='app1.html' "class="btn">Submit Details</button>
+        </form>
+    </div>
+   
+
+</body>
+</html>
+
